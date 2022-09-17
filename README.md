@@ -7,6 +7,7 @@
 
 ## 开源证书 License
 <h1 align="center">
-    <img src="https:"https://github.com/GeorgeDong32/My-Physics-Experiments/blob/main/Repo-Resources/MPE_License.svg" width="400" alt="repo license">
+    <img src="https://github.com/GeorgeDong32/My-Physics-Experiments/blob/main/Repo-Resources/MPE_License.svg" width="400" alt="repo license">
 </h1>
+
 [MPL2.0](https://github.com/GeorgeDong32/My-Physics-Experiments/blob/main/LICENSE)
