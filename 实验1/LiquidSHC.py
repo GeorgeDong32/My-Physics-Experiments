@@ -63,6 +63,6 @@ plt.savefig(".\LiquidSHC.png")
 ## 数据计算区
 plt.figure()
 plt.axis([0,100,0,100])
-plt.annotate("$S' = %.4f$\n$S'' = %.4f$\n盐水比热容为:$%.4fX 10^3 J/(kg·k)$\n" %(S_w,S_b,abs(c_b)), xy=(10,40))
+plt.annotate("$S' = %.4f$\n$S'' = %.4f$\n盐水比热容为:$%.4fX 10^3 J/(kg·k)$\n$ln1 = %.4f t + %.4f$\n$ln2 = %.4f t + %.4f$" %(S_w,S_b,abs(c_b),popt1[0],popt1[1],popt2[0],popt2[1]), xy=(10,40))
 plt.title("数据处理结果")
 plt.show()
