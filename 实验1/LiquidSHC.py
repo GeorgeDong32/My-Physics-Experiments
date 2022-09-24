@@ -47,5 +47,6 @@ plt.xlabel("$t(min)$",fontsize=12)
 plt.ylabel("$T(^text {o}C)$",fontsize=12)
 
 plt.title("液体比热容测定结果拟合",fontsize=18)
+plt.legend()
 plt.savefig(".\LiquidSHC.png")
 plt.show()
