@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit 
 # plt防止中文乱码
-plt.rcParams['font.family'] = ['Arial Unicode MS','Microsoft YaHei','SimHei','sans-serif']
+plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 
 # 待拟合函数定义
@@ -40,10 +40,12 @@ plt.figure()
 plt.axis([5,20,1.35,2.75])
 plt.scatter(t_w,ln_w,marker='o',label="纯净水原数据")
 plt.plot(t_w,ln_w_fit,color='red',label="纯净水拟合结果")
+
 plt.scatter(t_b,ln_b,marker='*',label="盐水原数据")
 plt.plot(t_b,ln_b_fit,color='blue',label="盐水拟合结果")
 plt.xlabel("$t(min)$",fontsize=12)
-plt.ylabel("$T($^text {o}$C)$",fontsize=12)
-plt.title("$液体比热容测定结果拟合$",fontsize=18)
+plt.ylabel("$T(^text {o}C)$",fontsize=12)
+
+plt.title("液体比热容测定结果拟合",fontsize=18)
 plt.savefig(".\LiquidSHC.png")
 plt.show()
