@@ -24,7 +24,7 @@ data1 = pd.read_csv("H2O.csv")
 v_1 = data1.iloc[:,0]
 B_1 = data1.iloc[:,1]
 
-data2 = pd.read_csv("CCl4.csv",sep="\t")
+data2 = pd.read_csv("C2F4.csv",sep="\t")
 v_2 = data2.iloc[:,0]
 B_2 = data2.iloc[0:,1]
 
@@ -55,8 +55,8 @@ plt.scatter(B_2,v_2,marker='o',label="原数据")
 plt.plot(B_2,v_2fit,color='green',label="拟合结果")
 plt.xlabel("$B(mT)$",fontsize=12)
 plt.ylabel("$\\nu(MHz)$",fontsize=12)
-plt.title("$CCl_4 Sample$",fontsize=18)
+plt.title("$C_2 F_4 Sample$",fontsize=18)
 plt.annotate("$\\nu = %5.4fB + %5.4f$\n" %(popt2[0],popt2[1]), xy=(305,12))
 plt.legend()
-plt.savefig(".\CCl4Sample.png")
+plt.savefig(".\C2F4Sample.png")
 plt.show()
