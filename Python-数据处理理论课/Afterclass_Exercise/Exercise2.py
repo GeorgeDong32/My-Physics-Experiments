@@ -20,11 +20,11 @@ def fit_fun2(B, k2, b2):
     return k2 * B + b2
 
 #数据导入
-data1 = pd.read_csv("Data1.csv")
+data1 = pd.read_csv("H2O.csv")
 v_1 = data1.iloc[:,0]
 B_1 = data1.iloc[:,1]
 
-data2 = pd.read_csv("Data2.csv",sep="\t")
+data2 = pd.read_csv("CCl4.csv",sep="\t")
 v_2 = data2.iloc[:,0]
 B_2 = data2.iloc[0:,1]
 
