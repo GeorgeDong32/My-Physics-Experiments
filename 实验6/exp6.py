@@ -45,7 +45,7 @@ popt3,pcov3=curve_fit(fit_fun1,u3,x3)
 xf3 = fit_fun1(u3,popt3[0],popt3[1])
 
 ## 数据绘图区
-plt.figure()
+plt.figure(dpi=250)
 plt.scatter(u1,x1,marker='o',label="单臂原数据")
 plt.plot(u1,xf1,color='red',label="单臂拟合结果")
 plt.scatter(u2,x2,marker='*',label="半桥原数据")
