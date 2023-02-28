@@ -23,5 +23,10 @@ def calculate(l , N):
 
 n1 = calculate(614E-9, N1)
 n2 = calculate(614E-9, N2)
-print(n1)
+# print(n1)
 print(n2)
+
+plt.figure(dpi = 150)
+plt.plot(p1, n1, 'o', label = 'n1')
+plt.plot(p2, n2, 'o', label = 'n2')
+plt.show()
